@@ -1,0 +1,174 @@
+@font-face {
+    font-family: Sacred;
+    src: url("Sacred Bridge Demo.ttf");
+}
+body { /* corpo do site: sem margem, sem borda, sem padding sem nd **/
+    margin: 0px;
+    background-color:  #051621f8;
+}
+
+.container { /*limitando o local do meu conteudo*/
+    max-width: 1500px;
+    height: 100%;
+}
+
+.header .container {
+    min-height: 90px;
+    height: 100%;
+}
+
+.header { /*Tudo aqui afeta meu cabeçário TODO*/
+    background-color: #051621; 
+    border-bottom: rgb(255, 255, 255) 1px solid;
+    margin: 0 auto;
+    padding: 0 auto;
+
+}
+.nav {
+    float: top;
+}
+
+.nav ul li { /*Aqui é só nas coisas da "lista"*/
+    display: inline-block;
+    margin-left:8%;
+    margin-top: 0px; 
+    font-family:'Cinzel', serif;
+    font-size: 127%;
+}
+
+li a:hover {
+
+transition: 0.5s ease-in;
+    color: rgb(253, 84, 84);
+}
+
+.nav ul { /*aqui é na lista por completo*/
+    margin: 0 auto;
+    padding: 2% 9% 2% 9%;
+    
+}
+
+.nav a { /*aqui é nos meus links da navegação*/
+    text-decoration: none;
+    color: white;
+}
+
+.myVideo {
+    position: relative;
+    min-width: 100%;
+    max-height: 80%;
+    height: 30%;
+    width: 100%;
+    opacity: 90.1%;
+}
+
+.degradetop {
+  
+    min-height: 7%;
+    min-width: 100%;
+    position: absolute;
+    top: 110%;
+    padding: 0px;
+    width: 100%;
+}
+.degradebottom {
+   
+    min-height: 7%;
+    min-width: 100%;
+    position: absolute;
+    top: 129.5%;
+    padding: 0px;
+    padding-left:0px; 
+}
+
+.titulogaleria h1{
+   font-family: "Sacred";
+   text-align: center;
+   color: rgb(255, 255, 255);
+   font-size: 70px;
+   margin-bottom: 0px; 
+   margin-top: 10%;
+}
+#ornamento {
+    padding-left: 31.8%; 
+}
+
+.galeriacontainer {
+    max-width: 980px;
+    display: flex;
+    padding: 50px;
+}
+
+.lbox {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.min ul {
+    width: 880px;
+    list-style: none;
+    margin: 100px auto;
+}
+
+.min ul li { /*Aqui é só nas coisas da "lista"*/
+    display: inline-block;
+    margin-left:87px;
+    margin-top: 0px; 
+
+}
+
+.miniatura {
+    width: 200px;
+    padding: 10px;
+    display: inline;
+}
+
+.lbox:target {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background: rgba(10,10,10,.7);
+    position: fixed;
+
+}
+
+.box_img_horizontal {
+    width: 600px;
+    padding: 0; 
+    margin: 2% 18%;
+}
+
+.box_img_vertical {
+    width: 600px;
+    padding: 0; 
+    margin: 2% 33%;
+}
+
+.btn {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#anterior {
+    left: 0%;
+    top: 50%;
+}
+
+#proximo {
+    left: 96%;
+    top: 50%;
+}
+
+#fechar {
+    top: 3%;
+    right: 2%;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>O Fantasma da Ópera (ínicio)</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    <!--fonte da nav-->
+    <link rel="sortcut icon" href="imgs\page-mask.ico" type="image/ico" />
+    <!--ícone na guia-->
+
+</head>
+
+<body>
+    <div class="header">
+        <!-- aqui começa meu cabeçário-->
+        <img src="imgs\page-mask.png" style="height: 59px; padding: 1% 0% 1% 9%; position:absolute;">
+        <div class="nav">
+            <!--Abrindo div da minha barra de navegação-->
+            <ul>
+                <li><a href="">Início </a></li>
+                <li><a href="">♦ &nbsp;&nbsp;&nbsp;Galeria</a></li>
+                <li><a href="">♦ &nbsp;&nbsp;&nbsp;Espetáculo</a></li>
+                <li><a href="">♦ &nbsp;&nbsp;&nbsp;Referências</pre></a></li>
+                <li><a href="">♦ &nbsp;&nbsp;&nbsp;Sobre Mim</a></li>
+            </ul>
+            <!--Fim da nav-->
+        </div> <!-- Fecha Container-->
+    </div> <!-- Fecha Cabeçário-->
+    </div>
+
+    <video autoplay muted loop class="myVideo">
+        <source src="imgs\websitevideo.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+
+    </video>
+    <div class="degradetop">
+        <img src="imgs\degradetop.png">
+    </div>
+    <div class="degradebottom">
+        <img src="imgs\degradebottom.png">
+    </div>
+
+    <div class="titulogaleria">
+        <h1><b style="color: rgb(247, 97, 97)">G</b>aleria</h1>
+        <img id="ornamento" src="imgs\ornamento.png" width="500px">
+    </div>
+    <ul class="min">
+        <!--Aqui vamos criar as miniaturas das imagens-->
+        <li><a href="#img1"><img src="imgs\espetaculo\christine.jpg" class="miniatura"></a></li>
+        <li><a href="#img2"><img src="imgs\espetaculo\raoulchristine.jpg" class="miniatura"></a></li>
+        <li><a href="#img3"><img src="imgs\espetaculo\fantasmao.jpg" class="miniatura"></a></li>
+        <li><a href="#img4"><img src="imgs\espetaculo\maskared.jpg" class="miniatura"></a></li>
+        <li><a href="#img5"><img src="imgs\espetaculo\fantasmachristine2.jpg" class="miniatura"></a></li>
+    </ul>
+
+    <div class="lbox" id="img1">
+        <div class=" box_img_vertical">
+            <a href="" class="btn" id="anterior">&#171;</a>
+            <a href="" class="btn" id="fechar">X</a>
+            <img src="imgs\espetaculo\christine.jpg" height=" 600px">
+            <a href="#img2" class="btn" id="proximo">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img2">
+        <div class=" box_img_horizontal">
+            <a href="#img1" class="btn" id="anterior">&#171;</a>
+            <a href="" class="btn" id="fechar">X</a>
+            <img src="imgs\espetaculo\raoulchristine.jpg" height="600px">
+            <a href="#img3" class="btn" id="proximo">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img3">
+        <div class=" box_img_vertical">
+            <a href="#img2" class="btn" id="anterior">&#171;</a>
+            <a href="" class="btn" id="fechar">X</a>
+            <img src="imgs\espetaculo\fantasmao.jpg" height="600px">
+            <a href="#img4" class="btn" id="proximo">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img4">
+        <div class=" box_img_horizontal">
+            <a href="#img3" class="btn" id="anterior">&#171;</a>
+            <a href="" class="btn" id="fechar">X</a>
+            <img src="imgs\espetaculo\maskared.jpg" height="600px">
+            <a href="#img5" class="btn" id="proximo">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img5">
+        <div class=" box_img_horizontal">
+            <a href="#img4" class="btn" id="anterior">&#171;</a>
+            <a href="" class="btn" id="fechar">X</a>
+            <img src="imgs\espetaculo\fantasmachristine2.jpg" height="600px">
+            <a href="#img1" class="btn" id="proximo">&#187;</a>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
