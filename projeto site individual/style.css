@@ -1,30 +1,37 @@
+@font-face {
+    font-family: Sacred;
+    src: url("Sacred Bridge Demo.ttf");
+}
 body { /* corpo do site: sem margem, sem borda, sem padding sem nd **/
     margin: 0px;
-    border: 0px;
-    padding: 0px;
+    background-color:  #051621f8;
 }
 
 .container { /*limitando o local do meu conteudo*/
-    max-width: 980px;
-    margin: 0 auto;
+    max-width: 1500px;
     height: 100%;
 }
 
 .header .container {
-    min-height: 70px;
+    min-height: 90px;
+    height: 100%;
 }
 
 .header { /*Tudo aqui afeta meu cabeçário TODO*/
     background-color: #051621; 
+    border-bottom: rgb(255, 255, 255) 1px solid;
+    margin: 0 auto;
+    padding: 0 auto;
 
 }
 .nav {
-    float: center;
+    float: top;
 }
 
 .nav ul li { /*Aqui é só nas coisas da "lista"*/
     display: inline-block;
-    margin-left:100px;
+    margin-left:87px;
+    margin-top: 0px; 
     font-family:'Cinzel', serif;
     font-size: 127%;
 }
@@ -32,16 +39,134 @@ body { /* corpo do site: sem margem, sem borda, sem padding sem nd **/
 li a:hover {
 
 transition: 0.5s ease-in;
-    color: red;
+    color: rgb(253, 84, 84);
 }
 
 .nav ul { /*aqui é na lista por completo*/
     margin: 0 auto;
-    padding: 22px;
+    padding: 22px 101px 22px 115px;
     
 }
 
 .nav a { /*aqui é nos meus links da navegação*/
     text-decoration: none;
     color: white;
+}
+
+.myVideo {
+    position: relative;
+    min-width: 100%;
+    max-height: 80%;
+    height: 30%;
+    width: 100%;
+    opacity: 90.1%;
+}
+
+.degradetop {
+  
+    min-height: 70px;
+    position: absolute;
+    top: 700px;
+    padding: 0px;
+    width: 100%;
+}
+.degradebottom {
+   
+    min-height: 70px;
+    min-width: 1000px;
+    position: absolute;
+    top: 900px;
+    padding: 0px;
+    padding-left:0px; 
+}
+
+.titulogaleria h1{
+   font-family: "Sacred";
+   text-align: center;
+   color: rgb(255, 255, 255);
+   font-size: 70px;
+   margin-bottom: 0px; 
+}
+#ornamento {
+    padding-left: 430px; 
+}
+
+.galeriacontainer {
+    max-width: 980px;
+    display: flex;
+    padding: 50px;
+}
+
+.lbox {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.min ul {
+    width: 880px;
+    list-style: none;
+    margin: 100px auto;
+}
+
+.min ul li { /*Aqui é só nas coisas da "lista"*/
+    display: inline-block;
+    margin-left:87px;
+    margin-top: 0px; 
+
+}
+
+.miniatura {
+    width: 200px;
+    padding: 10px;
+    display: inline;
+}
+
+.lbox:target {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background: rgba(10,10,10,.7);
+    position: fixed;
+
+}
+
+.box_img_horizontal {
+    width: 600px;
+    padding: 0; 
+    margin: 2% 18%;
+}
+
+.box_img_vertical {
+    width: 600px;
+    padding: 0; 
+    margin: 2% 33%;
+}
+
+.btn {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#anterior {
+    left: 0%;
+    top: 50%;
+}
+
+#proximo {
+    left: 96%;
+    top: 50%;
+}
+
+#fechar {
+    top: 3%;
+    right: 2%;
 }
